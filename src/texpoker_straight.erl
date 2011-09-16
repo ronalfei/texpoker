@@ -16,21 +16,22 @@ get_straight( L ) when length(L) >= 5 -> % if length < 5 , that is not regular l
 				false	-> Points
 			end
 	end,
-?dbg2("list R1 ~p ", [R1]),
-	R2 = to_int(R1), %R2 is a order list by desc ,like  9,7,5,3,2
-?dbg2("list R2  ~p ",[R2]),
-	case length(R2) of
+	R2 = to_int(R1),
+	R3 = lists:sort(fun(X,Y) -> rsort(X,Y)  end ,R2), %R3 is a order list by desc ,like  9,7,5,3,2
+	Ret = case length(R3) of		%5,6,7三种情况都是为了兼容判断同花顺的
 		5 ->
-			[H | _T] = R2,	
-			lists:seq(H,H-4,-1);
+			substraight(R3, 1, 1);
 		6 ->
-			6;
+			substraight(R3, 2, 1);
 		7 ->
-			7;
-		8 ->
-			8
-	end;	
-
+			substraight(R3, 3, 1);
+		8 -> %因为有A的情况会追加一个1在列表后端
+			substraight(R3, 4, 1)
+	end,
+	case Ret of
+		[] -> [];
+		_  -> return_proplist( Ret, L1)
+	end;
 get_straight( _L ) -> [].
 
 
@@ -38,28 +39,61 @@ get_straight( _L ) -> [].
 
 
 %%------internal functions------------
-to_int(L) -> 
-	to_int([], L).
+substraight(L, Total, _N) when Total =< 0 -> 
+	[H | _T] = L,
+    NewList = lists:seq(H,H-4,-1),
+    is_equal_list(L,NewList);
+substraight(_L, Total, N) when Total<N -> [];
+substraight(L, Total, N) ->
+	SubList = lists:sublist(L, N, 5),
+    [H | _T] = SubList,
+    NewList = lists:seq(H, H-4, -1),
+    case is_equal_list(SubList, NewList) of
+        [] -> substraight(L, Total, N+1);            
+        _  -> NewList
+    end.
 
-to_int(T1, [H|T]) ->
-?dbg2("this ~p ",[H]),
-	to_int([ texpoker_util:hex_to_int(H) | T1] , T);
-to_int(T1, []) -> 
-	T1.
+
+to_int(L) ->
+	[texpoker_util:to_int(X) || X <- L].
 
 
-%%-------------test ------
+rsort(X, Y) ->
+	if 
+		X > Y -> true;
+		true  -> false
+	end.
+
+
+is_equal_list(L1,L2) ->
+	if
+		L1=:=L2 -> L2;
+		true    -> []
+    end.
+
+return_proplist(IntList,PropList) ->
+	[ {proplists:get_value(texpoker_util:to_hex(X), PropList), texpoker_util:to_hex(X)}|| X <- IntList ].
+%%-------------test ------------------
 
 test() ->
 	L1 = [{"spade","b"},{"heart","a"},{"diamond","8"},{"club","7"},{"club","9"},{"heart","b"},{"spade","5"}],
 	A = ?MODULE:get_straight(L1),
-	?dbg2(" straight test for L1 : ~p",[A]),
-	L2 = [{?C,"b"},{?C,"a"},{?C,"8"},{?C,"4"},{?C,"d"},{"heart","b"},{?C,"5"}],
+	io:format(" straight test for L1 : ~p ~n",[A]),
+	L2 = [{?C,"8"},{?C,"4"},{?C,"7"},{"heart","6"},{?C,"5"}],
 	B = ?MODULE:get_straight(L2),
-	?dbg2("straight test for L2 : ~p",[B]),
+	io:format("straight test for L2 : ~p ~n",[B]),
 	L3 = [{?C,"b"},{?C,"a"},{?C,"c"},{?C,"e"},{?C,"d"}],
 	C = ?MODULE:get_straight(L3),
-	?dbg2("straight test for L3 : ~p",[C]),
-	L4 = [{?C,"b"},{?C,"a"},{?C,"c"},{?C,"9"},{?C,"d"}],
+	io:format("straight test for L3 : ~p ~n",[C]),
+	L4 = [{?C,"b"},{?C,"a"},{?C,"c"},{?C,"9"},{?C,"d"},{?C,"e"}],
 	D = ?MODULE:get_straight(L4),
-	?dbg2("straight test for L4 : ~p",[D]).
+	io:format("straight test for L4 : ~p ~n",[D]),
+	L5 = [{?C,"8"},{?C,"4"},{?C,"7"},{"heart","9"},{?C,"5"}],
+	E = ?MODULE:get_straight(L5),
+	io:format("straight test for L5 : ~p ~n",[E]),
+    L6 = [{?C,"3"},{?C,"4"},{?C,"e"},{"heart","2"},{?C,"5"}],
+    F = ?MODULE:get_straight(L6),
+    io:format("straight test for L6 : ~p ~n",[F]),
+	"over".
+
+

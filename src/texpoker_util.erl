@@ -8,10 +8,42 @@ sort(L) when is_list(L) -> lists:sort(fun(T1,T2) -> compare_value(T1,T2) end , L
 rsort(L) -> lists:reverse(?MODULE:sort(L)).
 
 hex_to_int(L) ->
-	my_http_util:hexlist_to_integer(L).
+	mochihex:to_int(L).
 
 int_to_hex( Int ) ->
 	string:to_lower(my_http_util:integer_to_hexlist( Int )).
+
+to_int( "1" ) -> 1;
+to_int( "2" ) -> 2;
+to_int( "3" ) -> 3;
+to_int( "4" ) -> 4;
+to_int( "5" ) -> 5;
+to_int( "6" ) -> 6;
+to_int( "7" ) -> 7;
+to_int( "8" ) -> 8;
+to_int( "9" ) -> 9;
+to_int( "a" ) -> 10;
+to_int( "b" ) -> 11;
+to_int( "c" ) -> 12;
+to_int( "d" ) -> 13;
+to_int( "e" ) -> 14;
+to_int( Hex ) -> mochihex:to_int(Hex).
+
+to_hex( 1 ) -> "e";
+to_hex( 2 ) -> "2";
+to_hex( 3 ) -> "3";
+to_hex( 4 ) -> "4";
+to_hex( 5 ) -> "5";
+to_hex( 6 ) -> "6";
+to_hex( 7 ) -> "7";
+to_hex( 8 ) -> "8";
+to_hex( 9 ) -> "9";
+to_hex( 10 ) -> "a";
+to_hex( 11 ) -> "b";
+to_hex( 12 ) -> "c";
+to_hex( 13 ) -> "d";
+to_hex( 14 ) -> "e";
+to_hex( Int ) -> mochihex:to_hex(Int).
 
 
 reverse_proplists(L) ->

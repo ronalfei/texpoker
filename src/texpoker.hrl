@@ -2,10 +2,8 @@
 
 
 -define(dbg1(Str),lager:info(Str)).
--define(dbg2(Str, Data),
-	lager:info(atom_to_list(?MODULE)++":"++integer_to_list(?LINE)++":"++Str
-				, Data)
-			).
+-define(dbg2(Str, Data), lager:info("~p:~p: " ++ Str, [?MODULE, ?LINE | Data])).
+
 
 -define(S, "spade").
 -define(H, "heart").
