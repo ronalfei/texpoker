@@ -1,0 +1,280 @@
+2011-09-14 00:00:07.479 [info] <0.213.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:00:15.029 [info] <0.213.0>@my_http_util:hexlist_to_integer:156 2
+2011-09-14 00:00:15.042 [info] <0.213.0>@my_http_util:hexlist_to_integer:157 my_http_util:157:size : "49" 
+2011-09-14 00:00:15.055 [info] <0.213.0>@my_http_util:hexlist_to_integer:159 3
+2011-09-14 00:01:19.786 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "1abcde" : 
+2011-09-14 00:01:19.786 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1abcde" 
+2011-09-14 00:01:19.786 [info] <0.87.0>@my_http_util:hexlist_to_integer:156 2
+2011-09-14 00:01:19.786 [info] <0.87.0>@my_http_util:hexlist_to_integer:157 my_http_util:157:size : "1abcde" 
+2011-09-14 00:01:19.787 [info] <0.87.0>@my_http_util:hexlist_to_integer:159 3
+2011-09-14 00:01:43.795 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "1" : 
+2011-09-14 00:01:43.795 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1" 
+2011-09-14 00:01:43.800 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:01:43.800 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "a" : 
+2011-09-14 00:01:43.800 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:01:43.803 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "b" : 
+2011-09-14 00:01:43.803 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:01:43.803 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "c" : 
+2011-09-14 00:01:43.804 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:01:43.804 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "d" : 
+2011-09-14 00:01:43.809 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:01:43.809 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "e" : 
+2011-09-14 00:01:43.809 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:01:43.809 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L2 : [14,13,12,11,10,1]
+2011-09-14 00:04:30.820 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "1" : 
+2011-09-14 00:04:30.823 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1" 
+2011-09-14 00:04:30.823 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:04:30.823 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "a" : 
+2011-09-14 00:04:30.826 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:04:30.826 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "b" : 
+2011-09-14 00:04:30.826 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:04:30.832 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "c" : 
+2011-09-14 00:04:30.832 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:04:30.832 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "d" : 
+2011-09-14 00:04:30.835 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:04:30.835 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "e" : 
+2011-09-14 00:04:30.835 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:04:30.838 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L3 : [[14,13,12,11,10,1]|1]
+2011-09-14 00:05:24.768 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "e" : 
+2011-09-14 00:05:24.768 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:05:24.768 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "b" : 
+2011-09-14 00:05:24.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:05:24.769 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "c" : 
+2011-09-14 00:05:24.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:05:24.769 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "d" : 
+2011-09-14 00:05:24.770 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:05:24.770 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "a" : 
+2011-09-14 00:05:24.770 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:05:24.770 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "1" : 
+2011-09-14 00:05:24.770 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1" 
+2011-09-14 00:05:24.771 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:05:24.771 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L3 : [1,1,10,11,12,13,14]
+2011-09-14 00:06:16.803 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "e" : 
+2011-09-14 00:06:16.806 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:06:16.806 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "b" : 
+2011-09-14 00:06:16.809 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:06:16.809 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "c" : 
+2011-09-14 00:06:16.809 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:06:16.812 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "3" : 
+2011-09-14 00:06:16.812 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "3" 
+2011-09-14 00:06:16.815 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:06:16.815 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "d" : 
+2011-09-14 00:06:16.818 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:06:16.818 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "a" : 
+2011-09-14 00:06:16.818 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:06:16.818 [info] <0.87.0>@texpoker_straight:to_int:31 texpoker_straight:31:this list is "1" : 
+2011-09-14 00:06:16.821 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1" 
+2011-09-14 00:06:16.821 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:06:16.821 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L3 : [1,1,3,10,11,12,13,14]
+2011-09-14 00:09:41.809 [info] <0.87.0>@texpoker_straight:to_int:27 texpoker_straight:27:this list is "15abcde" : 
+2011-09-14 00:09:41.809 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is 49 
+2011-09-14 00:09:41.812 [info] <0.87.0>@my_http_util:hexlist_to_integer:156 2
+2011-09-14 00:09:41.812 [info] <0.87.0>@my_http_util:hexlist_to_integer:157 my_http_util:157:size : 49 
+2011-09-14 00:11:40.768 [info] <0.87.0>@texpoker_straight:to_int:27 texpoker_straight:27:this list is "5abcde" : 
+2011-09-14 00:11:40.768 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "5" 
+2011-09-14 00:11:40.769 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:11:40.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:11:40.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:11:40.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:11:40.769 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:11:40.770 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:11:40.770 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L2 : [14,13,12,11,10,5]
+2011-09-14 00:12:15.768 [info] <0.87.0>@texpoker_straight:to_int:27 texpoker_straight:27:this list is [1,"5","a","b","c","d","e"] : 
+2011-09-14 00:12:15.768 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is 1 
+2011-09-14 00:12:15.769 [info] <0.87.0>@my_http_util:hexlist_to_integer:156 2
+2011-09-14 00:12:15.769 [info] <0.87.0>@my_http_util:hexlist_to_integer:157 my_http_util:157:size : 1 
+2011-09-14 00:12:38.802 [info] <0.87.0>@texpoker_straight:to_int:27 texpoker_straight:27:this list is "15abcde" : 
+2011-09-14 00:12:38.802 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "1" 
+2011-09-14 00:12:38.805 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:12:38.805 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "5" 
+2011-09-14 00:12:38.805 [info] <0.87.0>@my_http_util:hexlist_to_integer:144 1
+2011-09-14 00:12:38.808 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "a" 
+2011-09-14 00:12:38.808 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "b" 
+2011-09-14 00:12:38.811 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "c" 
+2011-09-14 00:12:38.811 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "d" 
+2011-09-14 00:12:38.811 [info] <0.87.0>@texpoker_straight:to_int:32 texpoker_straight:32:this is "e" 
+2011-09-14 00:12:38.814 [info] <0.87.0>@texpoker_straight:test:49 texpoker_straight:49:straight test for L2 : [14,13,12,11,10,5,1]
+2011-09-14 00:14:37.797 [info] <0.87.0>@texpoker_straight:test:40 texpoker_straight:40: straight test for L1 : [11,10,9,8,7,5]
+2011-09-14 00:14:37.800 [info] <0.87.0>@texpoker_straight:test:43 texpoker_straight:43:straight test for L2 : [11,10,9,8,5,4]
+2011-09-14 00:14:37.803 [info] <0.87.0>@texpoker_straight:test:46 texpoker_straight:46:straight test for L2 : [14,13,12,11,10,5,1]
+2011-09-14 00:38:30.801 [info] <0.87.0>@texpoker_straight:test:54 texpoker_straight:54: straight test for L1 : 6
+2011-09-14 00:38:30.804 [info] <0.87.0>@texpoker_straight:test:57 texpoker_straight:57:straight test for L2 : 6
+2011-09-14 00:38:30.804 [info] <0.87.0>@texpoker_straight:test:60 texpoker_straight:60:straight test for L2 : 6
+2011-09-14 00:39:51.811 [info] <0.87.0>@texpoker_straight:test:54 texpoker_straight:54: straight test for L1 : 6
+2011-09-14 00:39:51.814 [info] <0.87.0>@texpoker_straight:test:57 texpoker_straight:57:straight test for L2 : 6
+2011-09-14 00:39:51.814 [info] <0.87.0>@texpoker_straight:test:60 texpoker_straight:60:straight test for L2 : 6
+2011-09-14 00:39:51.820 [info] <0.87.0>@texpoker_straight:test:63 texpoker_straight:63:straight test for L2 :  "[12,11,10,9]
+2011-09-14 00:40:16.800 [info] <0.87.0>@texpoker_straight:test:54 texpoker_straight:54: straight test for L1 : 6
+2011-09-14 00:40:16.806 [info] <0.87.0>@texpoker_straight:test:57 texpoker_straight:57:straight test for L2 : 6
+2011-09-14 00:40:16.806 [info] <0.87.0>@texpoker_straight:test:60 texpoker_straight:60:straight test for L3 : 6
+2011-09-14 00:40:16.806 [info] <0.87.0>@texpoker_straight:test:63 texpoker_straight:63:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:41:04.805 [info] <0.87.0>@texpoker_straight:get_straight:20 texpoker_straight:20:list R2 : [11,10,9,8,7,5] 
+2011-09-14 00:41:04.805 [info] <0.87.0>@texpoker_straight:test:54 texpoker_straight:54: straight test for L1 : 6
+2011-09-14 00:41:04.808 [info] <0.87.0>@texpoker_straight:get_straight:20 texpoker_straight:20:list R2 : [11,10,9,8,5,4] 
+2011-09-14 00:41:04.808 [info] <0.87.0>@texpoker_straight:test:57 texpoker_straight:57:straight test for L2 : 6
+2011-09-14 00:41:04.808 [info] <0.87.0>@texpoker_straight:get_straight:20 texpoker_straight:20:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:41:04.811 [info] <0.87.0>@texpoker_straight:test:60 texpoker_straight:60:straight test for L3 : 6
+2011-09-14 00:41:04.811 [info] <0.87.0>@texpoker_straight:get_straight:20 texpoker_straight:20:list R2 :  "[12,11,10,9] 
+2011-09-14 00:41:04.811 [info] <0.87.0>@texpoker_straight:test:63 texpoker_straight:63:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:42:45.783 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5789ab"
+2011-09-14 00:42:45.786 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [11,10,9,8,7,5] 
+2011-09-14 00:42:45.786 [info] <0.87.0>@texpoker_straight:test:55 texpoker_straight:55: straight test for L1 : 6
+2011-09-14 00:42:45.786 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "4589ab"
+2011-09-14 00:42:45.786 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [11,10,9,8,5,4] 
+2011-09-14 00:42:45.787 [info] <0.87.0>@texpoker_straight:test:58 texpoker_straight:58:straight test for L2 : 6
+2011-09-14 00:42:45.789 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1abcde"
+2011-09-14 00:42:45.792 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:42:45.792 [info] <0.87.0>@texpoker_straight:test:61 texpoker_straight:61:straight test for L3 : 6
+2011-09-14 00:42:45.792 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "9abcd"
+2011-09-14 00:42:45.792 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[12,11,10,9] 
+2011-09-14 00:42:45.795 [info] <0.87.0>@texpoker_straight:test:64 texpoker_straight:64:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:44:07.814 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5789ab"
+2011-09-14 00:44:07.814 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [11,10,9,8,7,5] 
+2011-09-14 00:44:07.817 [info] <0.87.0>@texpoker_straight:test:55 texpoker_straight:55: straight test for L1 : 6
+2011-09-14 00:44:07.823 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "458abd"
+2011-09-14 00:44:07.823 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[11,10,8,5,4] 
+2011-09-14 00:44:07.826 [info] <0.87.0>@texpoker_straight:test:58 texpoker_straight:58:straight test for L2 : 6
+2011-09-14 00:44:07.826 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1abcde"
+2011-09-14 00:44:07.826 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:44:07.829 [info] <0.87.0>@texpoker_straight:test:61 texpoker_straight:61:straight test for L3 : 6
+2011-09-14 00:44:07.829 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "9abcd"
+2011-09-14 00:44:07.829 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[12,11,10,9] 
+2011-09-14 00:44:07.829 [info] <0.87.0>@texpoker_straight:test:64 texpoker_straight:64:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:46:08.803 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5789ab"
+2011-09-14 00:46:08.803 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [11,10,9,8,7,5] 
+2011-09-14 00:46:08.803 [info] <0.87.0>@texpoker_straight:test:55 texpoker_straight:55: straight test for L1 : 6
+2011-09-14 00:46:08.806 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "458abd"
+2011-09-14 00:46:08.806 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[11,10,8,5,4] 
+2011-09-14 00:46:08.806 [info] <0.87.0>@texpoker_straight:test:58 texpoker_straight:58:straight test for L2 : 6
+2011-09-14 00:46:08.812 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1abcde"
+2011-09-14 00:46:08.818 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:46:08.818 [info] <0.87.0>@texpoker_straight:test:61 texpoker_straight:61:straight test for L3 : 6
+2011-09-14 00:46:08.821 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "9abcd"
+2011-09-14 00:46:08.821 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[12,11,10,9] 
+2011-09-14 00:46:08.824 [info] <0.87.0>@texpoker_straight:test:64 texpoker_straight:64:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:46:51.815 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5789ab"
+2011-09-14 00:46:51.815 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:46:51.818 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "7" 
+2011-09-14 00:46:51.818 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:46:51.818 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:46:51.821 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:46:51.821 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:46:51.821 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [11,10,9,8,7,5] 
+2011-09-14 00:46:51.824 [info] <0.87.0>@texpoker_straight:test:56 texpoker_straight:56: straight test for L1 : 6
+2011-09-14 00:46:51.824 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "458abd"
+2011-09-14 00:46:51.827 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "4" 
+2011-09-14 00:46:51.827 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:46:51.827 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:46:51.830 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:46:51.830 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:46:51.833 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:46:51.833 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[11,10,8,5,4] 
+2011-09-14 00:46:51.833 [info] <0.87.0>@texpoker_straight:test:59 texpoker_straight:59:straight test for L2 : 6
+2011-09-14 00:46:51.836 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1abcde"
+2011-09-14 00:46:51.836 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "1" 
+2011-09-14 00:46:51.836 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:46:51.839 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:46:51.842 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:46:51.842 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:46:51.842 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "e" 
+2011-09-14 00:46:51.842 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:46:51.845 [info] <0.87.0>@texpoker_straight:test:62 texpoker_straight:62:straight test for L3 : 6
+2011-09-14 00:46:51.845 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "9abcd"
+2011-09-14 00:46:51.848 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:46:51.848 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:46:51.851 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:46:51.851 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:46:51.851 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:46:51.854 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :  "[12,11,10,9] 
+2011-09-14 00:46:51.854 [info] <0.87.0>@texpoker_straight:test:65 texpoker_straight:65:straight test for L4 :  "[12,11,10,9]
+2011-09-14 00:48:17.808 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5b97a8"
+2011-09-14 00:48:17.811 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:48:17.811 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:48:17.811 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:48:17.814 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "7" 
+2011-09-14 00:48:17.814 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:48:17.814 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:48:17.817 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [8,10,7,9,11,5] 
+2011-09-14 00:48:17.817 [info] <0.87.0>@texpoker_straight:test:56 texpoker_straight:56: straight test for L1 : 6
+2011-09-14 00:48:17.817 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5b4da8"
+2011-09-14 00:48:17.820 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:48:17.820 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:48:17.823 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "4" 
+2011-09-14 00:48:17.823 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:48:17.826 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:48:17.826 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:48:17.826 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [8,10,13,4,11,5] 
+2011-09-14 00:48:17.826 [info] <0.87.0>@texpoker_straight:test:59 texpoker_straight:59:straight test for L2 : 6
+2011-09-14 00:48:17.826 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1abcde"
+2011-09-14 00:48:17.829 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "1" 
+2011-09-14 00:48:17.829 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:48:17.832 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:48:17.832 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:48:17.832 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:48:17.832 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "e" 
+2011-09-14 00:48:17.835 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 : [14,13,12,11,10,1] 
+2011-09-14 00:48:17.835 [info] <0.87.0>@texpoker_straight:test:62 texpoker_straight:62:straight test for L3 : 6
+2011-09-14 00:48:17.838 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "b9cda"
+2011-09-14 00:48:17.841 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:48:17.841 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:48:17.841 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:48:17.841 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:48:17.844 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:48:17.844 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2 :   "[12,9,11] 
+2011-09-14 00:48:17.847 [info] <0.87.0>@texpoker_straight:test:65 texpoker_straight:65:straight test for L4 :   "[8,7,6]
+2011-09-14 00:51:34.767 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5b97a8" 
+2011-09-14 00:51:34.767 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:51:34.768 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:51:34.768 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:51:34.768 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "7" 
+2011-09-14 00:51:34.768 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:51:34.768 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:51:34.769 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2  [8,10,7,9,11,5] 
+2011-09-14 00:51:34.769 [info] <0.87.0>@texpoker_straight:test:56 texpoker_straight:56: straight test for L1 : 6
+2011-09-14 00:51:34.769 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "5b4da8" 
+2011-09-14 00:51:34.769 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "5" 
+2011-09-14 00:51:34.769 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:51:34.770 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "4" 
+2011-09-14 00:51:34.770 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:51:34.770 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:51:34.770 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "8" 
+2011-09-14 00:51:34.770 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2  [8,10,13,4,11,5] 
+2011-09-14 00:51:34.771 [info] <0.87.0>@texpoker_straight:test:59 texpoker_straight:59:straight test for L2 : 6
+2011-09-14 00:51:34.771 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "1ebcda" 
+2011-09-14 00:51:34.771 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "1" 
+2011-09-14 00:51:34.771 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "e" 
+2011-09-14 00:51:34.772 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:51:34.772 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:51:34.772 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:51:34.772 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:51:34.772 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2    "[12,11,14,1] 
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:test:62 texpoker_straight:62:straight test for L3 : 6
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:get_straight:19 texpoker_straight:19:list R1 "b9cda" 
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:51:34.773 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:51:34.774 [info] <0.87.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:51:34.774 [info] <0.87.0>@texpoker_straight:get_straight:21 texpoker_straight:21:list R2    "[12,9,11] 
+2011-09-14 00:51:34.774 [info] <0.87.0>@texpoker_straight:test:65 texpoker_straight:65:straight test for L4 :   "[8,7,6]
+2011-09-14 00:53:51.039 [info] <0.231.0>@texpoker_straight:to_int:45 texpoker_straight:45:this 98 
+2011-09-14 00:54:07.540 [info] <0.233.0>@texpoker_straight:to_int:45 texpoker_straight:45:this 98 
+2011-09-14 00:54:10.551 [info] <0.235.0>@texpoker_straight:to_int:45 texpoker_straight:45:this 57 
+2011-09-14 00:54:16.583 [info] <0.237.0>@texpoker_straight:to_int:45 texpoker_straight:45:this 99 
+2011-09-14 00:54:18.599 [info] <0.239.0>@texpoker_straight:to_int:45 texpoker_straight:45:this 99 
+2011-09-14 00:54:57.194 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:54:57.198 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:54:57.202 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:54:57.206 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:54:57.210 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:55:19.630 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:55:19.641 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:55:19.641 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:55:19.649 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:55:19.649 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
+2011-09-14 00:55:38.449 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b9cda" 
+2011-09-14 00:55:46.108 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "b" 
+2011-09-14 00:55:46.114 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "9" 
+2011-09-14 00:55:46.114 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "c" 
+2011-09-14 00:55:46.114 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "d" 
+2011-09-14 00:55:46.114 [info] <0.241.0>@texpoker_straight:to_int:45 texpoker_straight:45:this "a" 
