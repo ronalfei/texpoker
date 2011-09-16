@@ -18,14 +18,14 @@ get_straight( L ) when length(L) >= 5 -> % if length < 5 , that is not regular l
 	end,
 	R2 = to_int(R1),
 	R3 = lists:sort(fun(X,Y) -> rsort(X,Y)  end ,R2), %R3 is a order list by desc ,like  9,7,5,3,2
-	Ret = case length(R3) of		%5,6,7三种情况都是为了兼容判断同花顺的
+	Ret = case length(R3) of
 		5 ->
 			substraight(R3, 1, 1);
 		6 ->
 			substraight(R3, 2, 1);
 		7 ->
 			substraight(R3, 3, 1);
-		8 -> %因为有A的情况会追加一个1在列表后端
+		8 ->
 			substraight(R3, 4, 1)
 	end,
 	case Ret of
@@ -95,5 +95,3 @@ test() ->
     F = ?MODULE:get_straight(L6),
     io:format("straight test for L6 : ~p ~n",[F]),
 	"over".
-
-
