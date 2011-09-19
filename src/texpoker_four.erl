@@ -4,19 +4,35 @@
 -compile(export_all).
 
 
-get_four( L ) -> 
-	Tab = ets:new(slist, [bag, private]),
-	ets:insert( Tab,  L),
-	Vs = texpoker_util:get_values(L),
-	?dbg2("vs = ~p ---- Tab = ~p", [Vs, ets:tab2list(Tab)]),
-	[ ets:match(Tab, {'_', X} ) || X <- Vs]
+get_four( L ) ->
+	RL = texpoker_util:reverse_proplists(L),
+	V = proplists:get_keys(RL),
+	case get_count(RL, V) of
+		[] -> [];
+		RV -> 
+			R1 = proplists:lookup_all(RV, RL),
+			V2 = [Y || Y <- V, Y=/=RV],
+			[H|_T] = lists:sort(fun(X,Y)->texpoker_util:rsort(X,Y) end,V2),
+			R2 = proplists:lookup(H, RL),
+			%R = R1 ++ R2,
+			R = lists:append(R1,[R2]),
+			texpoker_util:reverse_proplists(R)
+	end.
+
+
+
+
+%%------internal function -------------------
+get_count(_SourceList, []) ->
+	[];
+get_count(SourceList, [H|T]) ->
+	L = proplists:get_all_values(H, SourceList),
+	Len = length(L),
+	case Len of
+		4 -> H;
+		_Any -> get_count(SourceList, T)
+	end.	
 	
-	.
-
-
-
-
-
 %%------------- test ------
 
 test() ->

@@ -49,8 +49,24 @@ to_hex( Int ) -> mochihex:to_hex(Int).
 reverse_proplists(L) ->
 	[{V, K}|| {K, V} <- L ].
 
-get_values(L) ->
-	[V || {K, V} <- L ].
+get_values(L) -> 
+	[V || {_K, V} <- L ].
+
+get_proplists_values(L) ->
+	proplists:get_keys(reverse_proplists(L)).
+
+get_sort_values(L) ->
+	L1 = [V || {_K, V} <- L ],
+	lists:sort(fun(X, Y) -> sort(X, Y) end, L1).
+
+get_rsort_values(L) ->
+	L1 = [V || {_K, V} <- L ],
+	lists:sort(fun(X,Y ) -> rsort(X, Y)  end,  L1).
+rsort( X, Y) when X > Y -> true;
+rsort(_X,_Y) -> false.
+
+sort( X, Y) when X > Y -> false;
+sort(_X,_Y) -> true.
 
 %%--internal function----
 compare_value({_K1,V1},{_K2,V2}) ->
