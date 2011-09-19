@@ -49,6 +49,9 @@ to_hex( Int ) -> mochihex:to_hex(Int).
 reverse_proplists(L) ->
 	[{V, K}|| {K, V} <- L ].
 
+get_values(L) ->
+	[V || {K, V} <- L ].
+
 %%--internal function----
 compare_value({_K1,V1},{_K2,V2}) ->
 	if 
