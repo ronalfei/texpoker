@@ -94,5 +94,5 @@ test() ->
     L6 = [{?C,"3"},{?C,"4"},{?C,"e"},{"heart","2"},{?C,"5"}],
     F = ?MODULE:get_straight(L6),
     ?dbg2("straight test for L6 : ~p ~n",[F]),
-	?dbg2("L 13: ~p ", [[13,12,8,16]]),
+	?dbg2("straight test for lager '13': ~p ", [[13,12,8,16]]),
 	"over".
