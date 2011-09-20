@@ -7,7 +7,7 @@
 get_four( L ) ->
 	RL = texpoker_util:reverse_proplists(L),
 	V = proplists:get_keys(RL),
-	case get_count(RL, V) of
+	case get_4count(RL, V) of
 		[] -> [];
 		RV -> 
 			R1 = proplists:lookup_all(RV, RL),
@@ -23,14 +23,14 @@ get_four( L ) ->
 
 
 %%------internal function -------------------
-get_count(_SourceList, []) ->
+get_4count(_SourceList, []) ->
 	[];
-get_count(SourceList, [H|T]) ->
+get_4count(SourceList, [H|T]) ->
 	L = proplists:get_all_values(H, SourceList),
 	Len = length(L),
 	case Len of
 		4 -> H;
-		_Any -> get_count(SourceList, T)
+		_Any -> get_4count(SourceList, T)
 	end.	
 	
 %%------------- test ------
