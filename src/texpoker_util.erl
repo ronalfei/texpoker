@@ -3,9 +3,9 @@
 
 -compile(export_all).
 
-sort(L) when is_list(L) -> lists:sort(fun(T1,T2) -> compare_value(T1,T2) end , L).
+proplists_sort(L) when is_list(L) -> lists:sort(fun(T1,T2) -> compare_value(T1,T2) end , L).
 
-rsort(L) -> lists:reverse(?MODULE:sort(L)).
+proplists_rsort(L) -> lists:reverse(proplists_sort(L)).
 
 hex_to_int(L) ->
 	mochihex:to_int(L).
@@ -93,8 +93,8 @@ test() ->
 		, {"club",		"9"}
 		, {"heart",		"b"}
 		, {"spade",		"5"} ],
-	R1 = sort(L),
-	R2 = rsort(L),
+	R1 = proplists_sort(L),
+	R2 = proplists_rsort(L),
 	?dbg1("test dbg1"),
 	?dbg2("excute sort method ~p : ~p", [L, R1]),
 	lager:info("excute sort method ~p : ~p", [L, R2]).
