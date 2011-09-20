@@ -5,7 +5,7 @@
 
 
 get_highc( L ) ->
-	texpoker_util:proplists_rsort(L).
+	lists:sublist(texpoker_util:proplists_rsort(L), 5).
 
 
 
