@@ -14,8 +14,13 @@ fetch(L) when length(L) == 7 ->
 							case texpoker_three:get_three(L) of
 								[] ->
 									case texpoker_apair:get_apair(L) of
-										[] -> %% need todo
-										L5 -> %% need todo
+										[] ->
+											calc_score(?TYPE_VALUE_HIGHC,texpoker_highc:get_hightc(L));
+										L5 ->
+											case texpoker_tpairs:get_tpairs(L) of
+												[] -> calc_score(?TYPE_VALUE_APAIR, L5);
+												L6 -> calc_score(?TYPE_VALUE_TPAIRS, L6)
+											end
 									end;
 								L4 -> 	
 									case texpoker_fhouse:get_fhouse(L) of 
@@ -48,8 +53,10 @@ calc_score(Type, L) ->
 
 test() ->
 	L1 = [{"spade","b"},{"heart","a"},{"diamond","7"},{"club","b"},{"club","9"},{"heart","7"},{"spade","5"}],
+	?dbg2("L1: ~p ", [L1]),
 	A = ?MODULE:fetch(L1),
 	?dbg2("test for L1 : ~p",[A]),
 	L2 = [{"spade","2"},{"heart","a"},{"diamond","4"},{"club","e"},{"club","9"},{"heart","9"},{"spade","a"}],
+	?dbg2("L1: ~p ", [L2]),
 	B = ?MODULE:fetch(L2),
 	?dbg2("test for L2 : ~p",[B]).
