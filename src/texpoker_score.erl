@@ -15,11 +15,11 @@ fetch(L) when length(L) == 7 ->
 								[] ->
 									case texpoker_apair:get_apair(L) of
 										[] ->
-											calc_score(?TYPE_VALUE_HIGHC,texpoker_highc:get_hightc(L));
+											calc_score(?TYPE_VALUE_HIGHC,texpoker_highc:get_hightc(L)); %%return high cards 
 										L5 ->
 											case texpoker_tpairs:get_tpairs(L) of
-												[] -> calc_score(?TYPE_VALUE_APAIR, L5);
-												L6 -> calc_score(?TYPE_VALUE_TPAIRS, L6)
+												[] -> calc_score(?TYPE_VALUE_APAIR, L5);				%% return A pair
+												L6 -> calc_score(?TYPE_VALUE_TPAIRS, L6)				%% return two pairs
 											end
 									end;
 								L4 -> 	
