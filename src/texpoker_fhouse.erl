@@ -15,7 +15,7 @@ get_fhouse( L ) ->
 				[] -> [];
 				RV2-> 
 					R1 = proplists:lookup_all(RV , RL),
-					R2 = proplists:lookup_all(RV2, RL),
+					R2 = lists:sublist(proplists:lookup_all(RV2, RL),2),
 					R = lists:append( R1, R2 ),
 					texpoker_util:reverse_proplists(R)
 			end
@@ -42,6 +42,7 @@ get_house(SourceList, [H|T]) ->
     Len = length(L),
     case Len of
         2 -> H;
+		3 -> H;
         _Any -> get_house(SourceList, T)
     end.
 %%------------- test ------
@@ -52,4 +53,8 @@ test() ->
 	?dbg2("test for L1 : ~p",[A]),
 	L2 = [{"spade","b"},{"heart","a"},{"diamond","b"},{"club","b"},{"club","9"},{"heart","9"},{"spade","a"}],
 	B = ?MODULE:get_fhouse(L2),
-	?dbg2("test for L2 : ~p",[B]).
+	?dbg2("test for L2 : ~p",[B]),
+	L3 = [{"spade","b"},{"heart","a"},{"diamond","b"},{"club","b"},{"club","a"},{"heart","9"},{"spade","a"}],
+	C = ?MODULE:get_fhouse(L3),
+	?dbg2("test for L3 : ~p",[C]).
+
