@@ -69,8 +69,7 @@ sort( X, Y) when X > Y -> false;
 sort(_X,_Y) -> true.
 
 
-for(M, M, F ) -> 
-	F(M);
+for(N, M, _F ) when N > M -> ok;	
 
 for(N, M, F ) ->
 	F(N),

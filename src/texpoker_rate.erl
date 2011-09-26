@@ -36,4 +36,7 @@ rate_aa(N, M) ->
 
 %%--------------test function 
 test() -> 
-	rate_aa(1, 52).
+	statistics(runtime),
+	rate_aa(1, 52),
+	{_,T} = statistics(runtime),
+	lager:info("All the count excause time : ~p ms",[T]).
