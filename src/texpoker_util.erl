@@ -68,6 +68,19 @@ rsort(_X,_Y) -> false.
 sort( X, Y) when X > Y -> false;
 sort(_X,_Y) -> true.
 
+
+for(M, M, F ) -> 
+	F(M);
+
+for(N, M, F ) ->
+	F(N),
+	for(N+1, M, F).
+
+
+
+
+
+
 %%--internal function----
 compare_value({_K1,V1},{_K2,V2}) ->
 	if 
