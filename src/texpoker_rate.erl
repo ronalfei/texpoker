@@ -15,7 +15,8 @@ rate_aa(N, M) ->
 							fun(F) -> ?FOR(F+1, M,
 								fun(G) -> ?FOR(G+1, M,
 									fun(H) -> 
-										lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H])
+										H
+										%lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H])
 									end
 								) end
 							) end
