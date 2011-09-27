@@ -3,6 +3,7 @@
 -compile(export_all).
 
 -define(FOR(N, M, F) , texpoker_util:for(N, M, F)).
+-define( CARD(X) , texpoker_cards:card(X) ).
 
 
 rate_aa(N, M) -> 
@@ -15,12 +16,8 @@ rate_aa(N, M) ->
 							fun(F) -> ?FOR(F+1, M,
 								fun(G) -> ?FOR(G+1, M,
 									fun(H) -> 
-										case A==44 of 
-											true -> 
-											lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H]);
-											false -> H
-										end
-										%lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H])
+										H
+										%lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G),?CARD(H)])
 									end
 								) end
 							) end
@@ -40,12 +37,10 @@ rate_aa(N, M) ->
 
 
 %%--------------test function 
-test() -> 
+test(M) -> 
 	lager:info("start time: ~p ", [time()]),
 	statistics(runtime),
-	texpoker_util:stop_log(),
-	rate_aa(1, 52),
-	texpoker_util:start_log(),
-	lager:info("end time: ~p ", [time()]),
+	rate_aa(1, M),
 	{_,T} = statistics(runtime),
+	lager:info("end time: ~p ", [time()]),
 	lager:info("All the count excause time : ~p ms",[T]).
