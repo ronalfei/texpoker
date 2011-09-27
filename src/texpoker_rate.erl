@@ -14,12 +14,14 @@ rate_aa(N, M) ->
 					fun(D) -> ?FOR(D+1, M,
 						fun(E) -> ?FOR(E+1, M,
 							fun(F) -> ?FOR(F+1, M,
-								fun(G) -> ?FOR(G+1, M,
-									fun(H) -> 
-										H
-										%lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G),?CARD(H)])
-									end
-								) end
+								fun(G) -> 	
+									spawn_link( fun() ->
+										L = [?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G)],
+										Key = term_to_binary(L),
+										Value = term_to_binary(texpoker_score:fetch(L)),
+										texpoker_riakc:set(Key, Value) end
+									)
+								end
 							) end
 						) end
 					) end
@@ -37,6 +39,7 @@ rate_aa(N, M) ->
 
 
 %%--------------test function 
+
 test(M) -> 
 	lager:info("start time: ~p ", [time()]),
 	statistics(runtime),

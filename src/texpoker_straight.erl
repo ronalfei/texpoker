@@ -26,7 +26,8 @@ get_straight( L ) when length(L) >= 5 -> % if length < 5 , that is not regular l
 		7 ->
 			substraight(R3, 3, 1);
 		8 ->
-			substraight(R3, 4, 1)
+			substraight(R3, 4, 1);
+		0 -> []
 	end,
 	case Ret of
 		[] -> [];
