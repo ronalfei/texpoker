@@ -15,7 +15,11 @@ rate_aa(N, M) ->
 							fun(F) -> ?FOR(F+1, M,
 								fun(G) -> ?FOR(G+1, M,
 									fun(H) -> 
-										H
+										case A==44 of 
+											true -> 
+											lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H]);
+											false -> H
+										end
 										%lager:info("A:~p | B:~p | C:~p | D:~p | E:~p | F:~p | G:~p | H:~p",[A,B,C,D,E,F,G,H])
 									end
 								) end
@@ -37,7 +41,11 @@ rate_aa(N, M) ->
 
 %%--------------test function 
 test() -> 
+	lager:info("start time: ~p ", [time()]),
 	statistics(runtime),
+	texpoker_util:stop_log(),
 	rate_aa(1, 52),
+	texpoker_util:start_log(),
+	lager:info("end time: ~p ", [time()]),
 	{_,T} = statistics(runtime),
 	lager:info("All the count excause time : ~p ms",[T]).
