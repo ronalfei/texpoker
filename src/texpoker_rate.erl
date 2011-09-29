@@ -14,14 +14,25 @@ rate_aa(N, M) ->
 					fun(D) -> ?FOR(D+1, M,
 						fun(E) -> ?FOR(E+1, M,
 							fun(F) -> ?FOR(F+1, M,
-								fun(G) -> 	
-									receive
-									after 2 ->
+								fun(G) -> 
+									Pid = self(),
+									receive ok ->
 										spawn_link( fun() ->
 											L = [?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G)],
 											Key = term_to_binary(L),
 											Value = term_to_binary(texpoker_score:fetch(L)),
-											texpoker_riakc:set(Key, Value) end
+											texpoker_riakc:set(Key, Value),
+											Pid ! ok
+											end
+										)
+									after 30 ->
+										spawn_link( fun() ->
+											L = [?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G)],
+											Key = term_to_binary(L),
+											Value = term_to_binary(texpoker_score:fetch(L)),
+											texpoker_riakc:set(Key, Value),
+											Pid ! ok
+											end
 										)
 									end
 								end
