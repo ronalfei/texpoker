@@ -21,6 +21,10 @@ stop(Pid) ->
 
 
 
+pset(Pid, Key, Value) -> 
+	Object = new(Key,Value),
+    save(Pid, Object),
+	Pid.
 
 set(Key,Value) -> 
 	Object = new(Key,Value),
