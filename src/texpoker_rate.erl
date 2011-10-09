@@ -21,7 +21,7 @@ rate_aa(N, M) ->
 											L = [?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G)],
 											Key = term_to_binary(L),
 											Value = term_to_binary(texpoker_score:fetch(L)),
-											texpoker_riakc:pset(Cid, Key, Value),
+											texpoker_riakc:pset1(Cid, Key, Value),
 											Pid ! {ok, Cid}
 											end
 										)
@@ -30,8 +30,8 @@ rate_aa(N, M) ->
 											L = [?CARD(A),?CARD(B),?CARD(C),?CARD(D),?CARD(E),?CARD(F),?CARD(G)],
 											Key = term_to_binary(L),
 											Value = term_to_binary(texpoker_score:fetch(L)),
-											Cid = texpoker_riakc:connect(),
-											texpoker_riakc:pset(Cid, Key, Value),
+											Cid = texpoker_riakc:connect1(),
+											texpoker_riakc:pset1(Cid, Key, Value),
 											Pid ! {ok, Cid}
 											end
 										)

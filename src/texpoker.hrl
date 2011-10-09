@@ -22,6 +22,7 @@
 -define(TYPE_VALUE_APAIR,    "2").
 -define(TYPE_VALUE_HIGHC,    "1").
 
+-define(RIAK_NODE, 'riak@127.0.0.1').
 -define(RIAK_HOST, "127.0.0.1").
 -define(RIAK_PORT, 8087).
 -define(BUCKET, <<"texpoker">>).

@@ -6,6 +6,7 @@
 -module(texpoker).
 -author("Mochi Media <dev@mochimedia.com>").
 -export([start/0, stop/0]).
+-include("texpoker.hrl").
 
 ensure_started(App) ->
     case application:start(App) of
@@ -23,6 +24,7 @@ start() ->
 	lager:start(),
     ensure_started(crypto),
     application:start(texpoker),
+	net_adm:ping(?RIAK_NODE),
 	texpoker_util:start_log().
 
 
