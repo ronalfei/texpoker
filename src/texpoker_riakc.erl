@@ -43,7 +43,8 @@ connect1() ->
 	%	 _   ->
 	%		lager:error("can not connect riak node: ~p ",[?RIAK_NODE])
 	%end.
-	{ok, C} = rpc:call(?RIAK_NODE,riak,client_connect,[?RIAK_NODE]),
+
+	{ok, C} = riak:client_connect(?RIAK_NODE),
 	C.
 
 new1(Key, Value) ->
