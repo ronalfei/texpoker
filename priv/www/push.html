@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>It Worked</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$.get('push', function(data) {
+		$('#msg').html(data);
+	});
+});
+</script>
+texpoker running.
+
+
+<div id="msg">
+init 
+</div>
+</body>
+</html>

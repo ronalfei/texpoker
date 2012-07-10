@@ -26,6 +26,9 @@ loop(Req, DocRoot) ->
         case Req:get(method) of
             Method when Method =:= 'GET'; Method =:= 'HEAD' ->
                 case Path of
+					"push" -> 
+							Respond = Req:respond({200, [{"content-type","text/plain"}], chunked}),
+							push(Respond);
                     _ ->
                         Req:serve_file(Path, DocRoot)
                 end;
@@ -54,6 +57,14 @@ loop(Req, DocRoot) ->
 get_option(Option, Options) ->
     {proplists:get_value(Option, Options), proplists:delete(Option, Options)}.
 
+push(Respond) ->
+	io:format("!!~n"),
+	T = io_lib:format("The time is: ~p~n", [calendar:local_time()]),
+	Respond:write_chunk(T), 
+	receive 
+	after 2000 ->
+		push(Respond)
+	end.
 %%
 %% Tests
 %%
